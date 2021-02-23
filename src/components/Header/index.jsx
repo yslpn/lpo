@@ -1,9 +1,9 @@
 import React from 'react'
 import { createUseStyles } from "react-jss"
 import styles from "./styles"
+import logo from '../../assets/images/lpoLogo.png'
 
 const useStyles = createUseStyles(styles);
-
 
 const Header = () => {
   const classes = useStyles();
@@ -19,9 +19,10 @@ const Header = () => {
   return (
     <header className={classes.container}>
       <div className={classes.logoBlock}>
+        <img src={logo} className={classes.logo} />
         <div className={classes.logoText}>
-          Либертарианский
-          <span className={classes.marked}>проектный</span>
+          Либертарианский<br />
+          <span className={classes.marked}>проектный</span><br />
           офис
         </div>
       </div>

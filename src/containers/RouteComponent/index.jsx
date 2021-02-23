@@ -1,8 +1,11 @@
 import React from 'react'
 
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles';
 
 import MainPage from '../../pages/Main'
+
+import styles from './styles'
 
 const RouteComponent = () => (
 	<Router>
@@ -14,4 +17,4 @@ const RouteComponent = () => (
 	</Router>
 )
 
-export default RouteComponent
+export default withStyles(styles)(RouteComponent)

@@ -1,4 +1,4 @@
-import { MAIN_COLOR } from '../../lib/constants';
+import { MAIN_COLOR, SECONDARY_COLOR } from '../../lib/constants';
 
 const styles = () => ({
   container: {
@@ -6,30 +6,47 @@ const styles = () => ({
     justifyContent: 'space-between',
     width: "100%",
     height: "8.5rem",
-    borderBottom: '1px solid black',
   },
   logoBlock: {
+    height: '60%',
     display: 'flex',
+    flex: 1,
+    alignSelf: 'center',
+    alignItems: 'center',
     marginLeft: '3rem',
   },
+  logo: {
+    height: '100%',
+  },
   logoText: {
+    marginLeft: '1rem',
+    fontFamily: 'Geometric Sans Serif',
     fontSize: '1.375rem',
     textTransform: 'uppercase',
-    width: '1rem',
+    color: SECONDARY_COLOR,
+    width: 'fit-content',
   },
   marked: {
     color: MAIN_COLOR,
   },
   nav: {
+    flex: 3,
+    display: 'flex',
+    alignItems: 'center',
     height: '100%',
     width: '100%',
   },
   navList: {
+    marginLeft: 'auto',
     display: 'flex',
     alignItems: 'center',
+    listStyleType: 'none',
   },
   navItem: {
-    margin: '0 1rem',
+    cursor: 'pointer',
+    textTransform: 'uppercase',
+    marginRight: '3rem',
+    color: SECONDARY_COLOR,
   }
 });
 

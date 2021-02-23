@@ -11,7 +11,6 @@ const MainPage = () => {
   return (
       <div className={classes.container}>
         <Header />
-        <p>Main page</p>
       </div>
   );
 };

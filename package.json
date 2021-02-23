@@ -11,6 +11,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/styles": "^4.11.3",
     "mobx": "^6.1.7",
     "mobx-react": "^7.1.0",
     "react": "^17.0.1",

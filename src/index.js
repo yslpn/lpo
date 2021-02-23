@@ -1,22 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import MainPage from './pages/Main'
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import RouteComponent from './containers/RouteComponent'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Switch>
-        <Route path="/">
-          <MainPage />
-        </Route>
-      </Switch>
-    </Router>
+    <RouteComponent />
   </React.StrictMode>,
   document.getElementById('root')
-);
+)

@@ -1,17 +1,19 @@
-import React from 'react'
-import { createUseStyles } from 'react-jss'
-import styles from './styles'
+import React from "react"
+import { createUseStyles } from "react-jss"
+import styles from "./styles"
+import Header from '../../components/Header'
 
-const useStyles = createUseStyles(styles)
+const useStyles = createUseStyles(styles);
 
-function MainPage() {
-  const classes = useStyles()
+const MainPage = () => {
+  const classes = useStyles();
 
   return (
-    <div className={classes.container}>
-      <p>Main page</p>
-    </div>
+      <div className={classes.container}>
+        <Header />
+        <p>Main page</p>
+      </div>
   );
-}
+};
 
-export default MainPage
+export default MainPage;

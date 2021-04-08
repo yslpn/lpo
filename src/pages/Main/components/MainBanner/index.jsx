@@ -24,9 +24,6 @@ const MainBanner = () => {
         <Button className={classes.button}>
           Подать заявку
         </Button>
-         <Button className={classes.button}>
-          Стать попечителем
-        </Button>
       </div>
     </div>
   )

@@ -41,6 +41,7 @@ const styles = () => ({
     marginLeft: 'auto',
     fontFamily: 'Museo Sans Cyrl',
     fontWeight: 300,
+    fontSize: '1rem',
     textAlign: 'right',
   },
   buttonsRow: {

@@ -4,7 +4,7 @@ const styles = () => ({
   button: {
     backgroundColor: 'white',
     width: '18rem',
-    height: '2.125rem',
+    height: '2.75rem',
     textTransform: 'uppercase',
     border: '1px solid white',
     color: SECONDARY_COLOR,

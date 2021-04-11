@@ -7,6 +7,9 @@ const styles = () => ({
     width: "100%",
     height: "8.5rem",
   },
+  greyBg: {
+    backgroundColor: '#E5E5E5'
+  },
   logoBlock: {
     height: '60%',
     display: 'flex',

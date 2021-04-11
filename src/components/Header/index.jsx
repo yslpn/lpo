@@ -1,11 +1,13 @@
 import React from 'react'
 import { createUseStyles } from "react-jss"
 import styles from "./styles"
+import cn from 'classnames'
 import logo from '../../assets/images/lpoLogo.png'
 
 const useStyles = createUseStyles(styles);
 
-const Header = () => {
+// eslint-disable-next-line react/prop-types
+const Header = ({ isFooter }) => {
   const classes = useStyles();
 
   const navTitles = [
@@ -15,7 +17,7 @@ const Header = () => {
   ]
 
   return (
-    <header className={classes.container}>
+    <header className={cn(classes.container, {[classes.greyBg]: isFooter })}>
       <div className={classes.logoBlock}>
         <img src={logo} className={classes.logo} />
         <div className={classes.logoText}>

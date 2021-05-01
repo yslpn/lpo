@@ -2,6 +2,7 @@ import React from "react"
 import { createUseStyles } from "react-jss"
 
 import Header from '../../components/Header'
+import Head from '../../containers/Head/index.jsx'
 import FormBanner from './components/FormBanner'
 import MainBanner from './components/MainBanner'
 import TrusteeBanner from './components/TrusteeBanner'
@@ -14,6 +15,7 @@ const MainPage = () => {
 
   return (
       <div className={classes.container}>
+        <Head />
         <Header />
         <MainBanner />
         <FormBanner />

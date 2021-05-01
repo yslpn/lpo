@@ -4,7 +4,6 @@ import { createUseStyles } from "react-jss"
 import Header from '../../components/Header'
 import FormBanner from './components/FormBanner'
 import MainBanner from './components/MainBanner'
-import ProjectsBanner from './components/ProjectsBanner'
 import TrusteeBanner from './components/TrusteeBanner'
 import styles from "./styles"
 
@@ -17,7 +16,6 @@ const MainPage = () => {
       <div className={classes.container}>
         <Header />
         <MainBanner />
-        <ProjectsBanner />
         <FormBanner />
         <TrusteeBanner />
         <Header isFooter={true} />

@@ -18,7 +18,7 @@ const styles = () => ({
     textAlign: 'right',
     textTransform: 'uppercase',
     lineHeight: '45px',
-    marginBottom: '2.25rem',
+    marginBottom: '4.25rem',
     [breakpoints.down('sm')]: {
       fontSize: '1.5rem',
       lineHeight: '1.5rem',

@@ -38,8 +38,16 @@ const ProjectsBanner = () => {
 
   const swiperProps = {
     containerClass: classes.swiperContainer,
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
+    breakpoints: {
+      1000: {
+        slicedPerView: 3,
+      },
+      650: {
+        slidesPerView: 2,
+      }
+    }
   }
 
   return (

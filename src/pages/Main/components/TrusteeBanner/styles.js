@@ -8,9 +8,9 @@ const styles = () => ({
     height: "100%",
     minHeight: '37rem',
     padding: '7rem 6rem',
-    [breakpoints.down('sm')]: {
+    [breakpoints.down('800')]: {
       padding: '4rem 3rem',
-    }
+    },
   },
   bannerName: {
     fontWeight: 700,
@@ -28,6 +28,7 @@ const styles = () => ({
   trusteeList: {
     display: 'flex',
     flexWrap: 'wrap',
+    justifyContent: 'center',
     [breakpoints.down('sm')]: {
       justifyContent: 'center',
     }

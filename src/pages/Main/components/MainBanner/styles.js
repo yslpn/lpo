@@ -13,6 +13,7 @@ const styles = () => ({
     backgroundImage: `url(${backgroundPhoto})`,
     background: MAIN_COLOR,
     padding: '7rem 6rem',
+    position: 'relative',
     [breakpoints.down('900')]: {
       padding: '4.5rem'
     },
@@ -68,6 +69,69 @@ const styles = () => ({
   },
   button: {
     marginLeft: '3rem'
+  },
+  linesTopMobile: {
+    display: 'none',
+    [breakpoints.down('sm')]: {
+      display: 'block',
+      position: 'absolute',
+      top: 0,
+      right: 0,
+    }
+  },
+  linesTopDesktop: {
+    display: 'none',
+    [breakpoints.down('lg')]: {
+      display: 'block',
+      position: 'absolute',
+      top: 0,
+      right: 0,
+    },
+    [breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  linesTopDesktopMax: {
+    display: 'block',
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    [breakpoints.down('lg')]: {
+      display: 'none'
+    }
+  },
+  linesBottomMobile: {
+    display: 'none',
+    [breakpoints.down('lg')]: {
+      display: 'block',
+      position: 'absolute',
+      bottom: '-21px',
+      left: 0,
+    },
+    [breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  linesBottomDesktop: {
+    display: 'none',
+    [breakpoints.down('xl')]: {
+      display: 'block',
+      position: 'absolute',
+      bottom: '-70px',
+      left: 0,
+    },
+    [breakpoints.down('lg')]: {
+      display: 'none'
+    }
+  },
+  linesBottomDesktopMax: {
+    display: 'block',
+    position: 'absolute',
+    bottom: '-70px',
+    left: 0,
+    [breakpoints.down('xl')]: {
+      display: 'none'
+    }
   }
 });
 

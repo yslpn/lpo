@@ -7,10 +7,14 @@ import styles from "./styles"
 
 const useStyles = createUseStyles(styles);
 
-const Button = ({ className, ...props }) => {
+const Button = ({ className, children, ...props }) => {
   const classes = useStyles()
 
-  return <button className={cn(classes.button, className)} {...props}></button>
+  return (
+    <button className={cn(classes.button, className)} {...props}>
+      {children}
+    </button>
+  )
 }
 
 export default Button

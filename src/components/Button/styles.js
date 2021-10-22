@@ -9,10 +9,13 @@ const styles = () => ({
     border: '1px solid white',
     color: SECONDARY_COLOR,
     transitionDuration: '0.3s',
+    boxShadow: `15px 15px 0 0 ${SECONDARY_COLOR}`,
     cursor: 'pointer',
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: '18px',
     '&:hover': {
-      borderColor: '#dbb54d',
-      backgroundColor: '#FAF3CD'
+      boxShadow: `0 0 0 0 ${SECONDARY_COLOR}`
     }
   }
 });

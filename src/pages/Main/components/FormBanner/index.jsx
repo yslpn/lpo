@@ -29,7 +29,7 @@ const FormBanner = () => {
   }
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="application">
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert elevation={6} variant="filled" onClose={handleClose} severity="success">
           Заявка успешно отправлена!
@@ -49,13 +49,12 @@ const FormBanner = () => {
             <input className={classes.input} name="link" id="link" required />
           </div>
           <div className={classes.rowWithCheckbox}>
-            <div className={classes.inputBlock} style={{flex: 1}}>
+            <div className={classes.inputBlock} style={{ flex: 1 }}>
               <label className={classes.label} htmlFor="name">ваше имя</label>
               <input className={classes.input} name="name" id="name" required />
             </div>
             <div className={classes.checkboxBlock}>
               <Checkbox
-                defaultChecked
                 color="black"
                 id="adult"
                 name="adult"

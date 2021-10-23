@@ -1,8 +1,9 @@
 import breakpoints from '../../../../lib/breakpoints';
 import { MAIN_COLOR } from '../../../../lib/constants';
 
-const styles = () => ({
+const styles = {
   container: {
+    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
     width: "100%",
@@ -11,7 +12,7 @@ const styles = () => ({
     backgroundColor: MAIN_COLOR,
     padding: '6rem',
     [breakpoints.down('lg')]: {
-      padding: '3rem',
+      padding: '52px',
     },
     [breakpoints.down('exs')]: {
       padding: ' 2rem 1.5rem'
@@ -23,13 +24,14 @@ const styles = () => ({
     textTransform: 'uppercase',
     color: 'white',
     lineHeight: '45px',
-    marginBottom: '2rem',
+    marginBottom: '40px',
     [breakpoints.down('sm')]: {
       fontSize: '1.5rem',
     }
   },
   form: {
     display: 'flex',
+    zIndex: 1,
     [breakpoints.down('1000')]: {
       flexDirection: 'column',
     }
@@ -125,7 +127,29 @@ const styles = () => ({
     [breakpoints.down('1000')]: {
       marginTop: '2rem',
     }
+  },
+  diamondSmall: {
+    position: 'absolute',
+    top: '0',
+    right: '0',
+    display: 'none',
+    [breakpoints.down('1000')]: {
+      display: 'block'
+    },
+    [breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  diamondBig: {
+    position: 'absolute',
+    bottom: '-200px',
+    left: '-55px',
+    display: 'block',
+    zIndex: 2,
+    [breakpoints.down('lg')]: {
+      display: 'none'
+    }
   }
-});
+};
 
 export default styles;

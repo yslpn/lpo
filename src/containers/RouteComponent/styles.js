@@ -17,7 +17,7 @@ import GeometricSansSerifWOFF2 from '../../assets/fonts/Geometric/geometricsanss
 import GeometricSansSerifWOFF from '../../assets/fonts/Geometric/geometricsansserifv1.woff'
 import GeometricSansSerifTTF from '../../assets/fonts/Geometric/geometricsansserifv1.ttf'
 
-const styles = () => ({
+const styles = {
   '@global': {
     '@font-face': [
       {
@@ -74,6 +74,6 @@ const styles = () => ({
       padding: 0,
     }
   }
-});
+};
 
 export default styles;

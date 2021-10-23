@@ -1,6 +1,6 @@
 import { MAIN_COLOR } from '../../../../../../lib/constants';
 
-const styles = () => ({
+const styles = {
   container: {
     width: "100%",
     height: "100%",
@@ -48,6 +48,6 @@ const styles = () => ({
     color: 'white',
     marginLeft: 'auto',
   },
-});
+};
 
 export default styles;

@@ -38,7 +38,7 @@ const MainBanner = () => {
       <div className={classes.linesTopDesktopMax}>
         <svg width="1059" height="111" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#232323" strokeWidth="3" d="M1000.82 0v110.962M0 86.5h1058.95" /></svg>
       </div>
-      {/* bottom */}
+      {/* bottom-left */}
       <div className={classes.linesBottomMobile}>
         <svg width="279" height="221" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#232323" strokeWidth="3" d="M-15.879 219.468h84.125M94.605 157.19v46.884M51.283.212v220.756M-42.56 176.146h321.22M-92.66 132.824h222.014" /></svg>
       </div>
@@ -47,6 +47,16 @@ const MainBanner = () => {
       </div>
       <div className={classes.linesBottomDesktopMax}>
         <svg width="1000" height="455" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#232323" strokeWidth="3" d="M47.893 285.064h607.258M99.103 62.694V454.05M291.892 144.654V403M195.498.646v332.447M-11.474 188.67l1010.726-.001M-122.95 92.275h552.085" /></svg>
+      </div>
+      {/* bottom-right */}
+      <div className={classes.linesBottomSmall}>
+        <svg width="413" height="117" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#232323" strokeWidth="3" d="M253.202 84.992h271.902M363.281.564v115.675M320.121 14.023v72.469M277.136 42.231v70.916M.47 41.831h428.066" /></svg>
+      </div>
+      <div className={classes.linesBottomMedium}>
+        <svg width="673" height="199" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#232323" strokeWidth="3" d="M434.722 146.354h467.457M622.894.125v198.87M548.691 23.264v124.59M474.792 71.76v121.918M.224 72.151H736.16" /></svg>
+      </div>
+      <div className={classes.linesBottomMax}>
+        <svg width="907" height="259" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#232323" strokeWidth="3" d="M564.893 191.064h607.257M808.892.654V259M712.498 30.713v161.851M616.498 93.713v158.38M.45 94.67l956.031-.001" /></svg>
       </div>
     </div>
   )

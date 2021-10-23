@@ -1,6 +1,6 @@
 import { SECONDARY_COLOR } from '../../lib/constants'
 
-const styles = () => ({
+const styles = {
   button: {
     backgroundColor: 'white',
     width: '18rem',
@@ -14,10 +14,12 @@ const styles = () => ({
     fontWeight: 500,
     fontSize: '16px',
     lineHeight: '18px',
+    transiton: 'All 0.3s ease',
     '&:hover': {
-      boxShadow: `0 0 0 0 ${SECONDARY_COLOR}`
+      boxShadow: `0 0 0 0 ${SECONDARY_COLOR}`,
+      transform: 'translate(0, 15px)'
     }
   }
-});
+};
 
 export default styles;

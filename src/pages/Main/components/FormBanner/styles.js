@@ -31,7 +31,7 @@ const styles = {
   },
   form: {
     display: 'flex',
-    zIndex: 1,
+    zIndex: 2,
     [breakpoints.down('1000')]: {
       flexDirection: 'column',
     }
@@ -133,6 +133,7 @@ const styles = {
     top: '0',
     right: '0',
     display: 'none',
+    zIndex: 1,
     [breakpoints.down('1000')]: {
       display: 'block'
     },
@@ -145,7 +146,7 @@ const styles = {
     bottom: '-200px',
     left: '-55px',
     display: 'block',
-    zIndex: 2,
+    zIndex: 1,
     [breakpoints.down('lg')]: {
       display: 'none'
     }

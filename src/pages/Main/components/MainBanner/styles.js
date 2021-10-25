@@ -2,7 +2,7 @@ import { MAIN_COLOR, SECONDARY_COLOR } from '../../../../lib/constants';
 import backgroundPhoto from '../../../../assets/images/main_banner.png'
 import breakpoints from '../../../../lib/breakpoints';
 
-const styles = () => ({
+const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -132,7 +132,40 @@ const styles = () => ({
     [breakpoints.down('xl')]: {
       display: 'none'
     }
-  }
-});
+  },
+  linesBottomSmall: {
+    display: 'none',
+    [breakpoints.down('lg')]: {
+      display: 'block',
+      position: 'absolute',
+      bottom: '-95px',
+      right: 0,
+    },
+    [breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  linesBottomMedium: {
+    display: 'none',
+    [breakpoints.down('xl')]: {
+      display: 'block',
+      position: 'absolute',
+      bottom: '-160px',
+      right: 0,
+    },
+    [breakpoints.down('lg')]: {
+      display: 'none'
+    }
+  },
+  linesBottomMax: {
+    display: 'block',
+    position: 'absolute',
+    bottom: '-180px',
+    right: 0,
+    [breakpoints.down('xl')]: {
+      display: 'none'
+    }
+  },
+};
 
 export default styles;

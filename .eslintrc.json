@@ -4,8 +4,6 @@
         "es2021": true
     },
     "extends": [
-        "eslint:recommended",
-        "prettier",
         "plugin:react/recommended"
     ],
     "parserOptions": {
@@ -16,8 +14,7 @@
         "sourceType": "module"
     },
     "plugins": [
-      "react",
-      "prettier"
+      "react"
     ],
     "rules": {
     }

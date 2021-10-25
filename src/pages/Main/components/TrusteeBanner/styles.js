@@ -1,7 +1,8 @@
 import breakpoints from '../../../../lib/breakpoints';
 
-const styles = () => ({
+const styles = {
   container: {
+    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
     width: "100%",
@@ -11,6 +12,9 @@ const styles = () => ({
     [breakpoints.down('800')]: {
       padding: '4rem 3rem',
     },
+  },
+  wrapper: {
+    zIndex: 1,
   },
   bannerName: {
     fontWeight: 700,
@@ -32,7 +36,31 @@ const styles = () => ({
     [breakpoints.down('sm')]: {
       justifyContent: 'center',
     }
+  },
+  linesTop: {
+    position: 'absolute',
+    display: 'none',
+    top: '-112px',
+    left: 0,
+    [breakpoints.down('lg')]: {
+      display: 'block',
+    },
+    [breakpoints.down('sm')]: {
+      display: 'none',
+    }
+  },
+  linesBottom: {
+    position: 'absolute',
+    display: 'block',
+    bottom: '-25px',
+    left: 0,
+    [breakpoints.down('1600')]: {
+      bottom: '-50px',
+    },
+    [breakpoints.down('lg')]: {
+      display: 'none',
+    },
   }
-});
+};
 
 export default styles;

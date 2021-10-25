@@ -1,7 +1,7 @@
 import breakpoints from '../../../../../../lib/breakpoints';
 import { MAIN_COLOR } from '../../../../../../lib/constants';
 
-const styles = () => ({
+const styles = {
   container: {
     width: "calc(((100vw - 12rem) / 5) - 1.5rem)",
     height: "100%",
@@ -45,6 +45,6 @@ const styles = () => ({
   description: {
     fontFamily: 'Museo Sans Cyrl',
   }
-});
+};
 
 export default styles;

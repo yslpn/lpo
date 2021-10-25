@@ -1,7 +1,7 @@
 import breakpoints from '../../lib/breakpoints';
 import { MAIN_COLOR, SECONDARY_COLOR } from '../../lib/constants';
 
-const styles = () => ({
+const styles = {
   container: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -76,6 +76,6 @@ const styles = () => ({
     marginRight: '3rem',
     color: SECONDARY_COLOR,
   }
-});
+};
 
 export default styles;

@@ -34,7 +34,7 @@ const ProjectsBanner = () => {
     date: '02.12.2020',
     image: krasnodar,
   },
-]
+  ];
 
   const swiperProps = {
     containerClass: classes.swiperContainer,
@@ -68,6 +68,7 @@ const ProjectsBanner = () => {
           ))}
         </Swiper>
       </div>
+
     </div>
   )
 }

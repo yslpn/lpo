@@ -1,6 +1,6 @@
 import breakpoints from '../../../../lib/breakpoints';
 
-const styles = () => ({
+const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -33,7 +33,7 @@ const styles = () => ({
     display: 'flex',
     margin: '1.5rem 0',
     overflow: 'hidden',
-  },
-});
+  }
+};
 
 export default styles;

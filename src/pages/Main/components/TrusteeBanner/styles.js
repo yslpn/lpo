@@ -32,7 +32,7 @@ const styles = {
   trusteeList: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'center',
+    justifyContent: 'end',
     [breakpoints.down('sm')]: {
       justifyContent: 'center',
     }
@@ -57,7 +57,7 @@ const styles = {
     [breakpoints.down('1600')]: {
       bottom: '-50px',
     },
-    [breakpoints.down('lg')]: {
+    [breakpoints.down('1000')]: {
       display: 'none',
     },
   }

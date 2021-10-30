@@ -14,10 +14,12 @@ const styles = {
     background: "#fff",
     border: "none",
     transition: "all .3s ease-out",
+    transform: 'translate(-15px, 0)',
     boxShadow: `1px 1px 0 0 ${SECONDARY_COLOR},\n    2px 2px 0 0 ${SECONDARY_COLOR},\n    3px 3px 0 0 ${SECONDARY_COLOR},\n    4px 4px 0 0 ${SECONDARY_COLOR},\n    5px 5px 0 0 ${SECONDARY_COLOR},\n    6px 6px 0 0 ${SECONDARY_COLOR},\n    7px 7px 0 0 ${SECONDARY_COLOR},\n    8px 8px 0 0 ${SECONDARY_COLOR},\n    9px 9px 0 0 ${SECONDARY_COLOR},\n    10px 10px 0 0 ${SECONDARY_COLOR},\n    11px 11px 0 0 ${SECONDARY_COLOR},\n    12px 12px 0 0 ${SECONDARY_COLOR}`,
     '&:hover': {
       color: "#444",
-      boxShadow: `1px 1px 0 0 ${SECONDARY_COLOR},\n    2px 2px 0 0 ${SECONDARY_COLOR},\n    3px 3px 0 0 ${SECONDARY_COLOR},\n    4px 4px 0 0 ${SECONDARY_COLOR},\n    5px 5px 0 0 ${SECONDARY_COLOR}`
+      boxShadow: `1px 1px 0 0 ${SECONDARY_COLOR},\n    2px 2px 0 0 ${SECONDARY_COLOR},\n    3px 3px 0 0 ${SECONDARY_COLOR},\n    4px 4px 0 0 ${SECONDARY_COLOR},\n    5px 5px 0 0 ${SECONDARY_COLOR}`,
+      transform: 'translate(0, 15px)'
     }
   }
 };
